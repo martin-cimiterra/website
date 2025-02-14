@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Martin Cimiterra</h1>
+            <nav>
+                <ul>
+                    <li><a href="{{ url_for('home') }}">Home</a></li>
+                    <li><a href="{{ url_for('curriculum_vitæ') }}">Curriculum Vitæ</a></li>
+					<li><a href="{{ url_for('publications') }}">Publications</a></li>
+                    <li><a href="{{ url_for('teaching') }}">Teaching</a></li>
+					<li><a href="{{ url_for('work_in_progress') }}">Work In Progress</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="intro-container">
+    <div class="intro-text">
+        <h2>About Me</h2>
+        <p>Welcome to my academic site. This is a place where I share my research, publications, and teaching activities.</p>
+        <p>I am <a href="https://webapps.unitn.it/du/it/Persona/PER0286291/Curriculum">Postdoc Research Fellow</a> in Economics at the <a href="https://www.unitn.it/it"> University of Trento</a>.</p>
+        <p>I am currently involved in the <a href="https://www.geotwin.it/">GeoTwin</a>&nbsp;research project, led by Principal Investigator Prof. Sandro Montresor. This project aims to identify, characterise, and map digital technologies at the regional level that can enhance local environmental sustainability while supporting the broader twin transition. This research explores the technical, economic, socio-institutional, and regional policy factors influencing the development and adoption of these technologies for sustainable environmental impact.</p>
+        <p>I am interested in Industrial Dynamics, Industrial Organisation, Economics of Innovation, Digital Economy, Twin Transition and Sustainable Development Goals.</p>
+        <p>I work in Python, SQL, R and Stata.</p>
+    </div>
+	
+    <img src="{{ url_for('static', filename='images/Martin_Cimiterra.jpg') }}" alt="Martin Cimiterra" class="profile-photo">
+</section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Martin Cimiterra. All rights reserved.</p>
+    </footer>
+</body>
+</html>

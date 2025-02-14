@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Martin Cimiterra - {{ title }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <style>
+        .institution {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Martin Cimiterra</h1>
+            <nav>
+                <ul>
+                    <li><a href="{{ url_for('home') }}">Home</a></li>
+                    <li><a href="{{ url_for('curriculum_vitæ') }}">Curriculum Vitæ</a></li>
+                    <li><a href="{{ url_for('publications') }}">Publications</a></li>
+                    <li><a href="{{ url_for('teaching') }}" class="active">Teaching</a></li>
+					<li><a href="{{ url_for('work_in_progress') }}">Work In Progress</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="teaching">
+            <h2>Teaching Activities</h2>
+
+            <div class="institution"><b>Lecturer of Econometrics at Skema Business School, Sophia Antipolis Campus</b></div>
+            <div class="course">Main course and tutorials <span class="year">2023, 2024</span></div>
+
+            <div class="institution"><b>Lecturer at Sciences Po Paris, Menton Campus</b></div>
+            <div class="course">Courses based on CORE Econ <span class="year">2024</span></div>
+
+            <div class="institution"><b>Lecturer at University of Côte d'Azur EUR-ELMI</b></div>
+            <div class="course">Macroeconomics <span class="year">2024</span></div>
+            <div class="course">Econometrics <span class="year">2023</span></div>
+            <div class="course">Introduction to R (in English) <span class="year">2022, 2023</span></div>
+            <div class="course">Microeconomics <span class="year">2021, 2022, 2023</span></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Martin Cimiterra. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+

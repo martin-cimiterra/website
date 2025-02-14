@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Martin Cimiterra - {{ title }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Martin Cimiterra</h1>
+            <nav>
+                <ul>
+                    <li><a href="{{ url_for('home') }}">Home</a></li>
+                    <li><a href="{{ url_for('curriculum_vitæ') }}">Curriculum Vitæ</a></li>
+                    <li><a href="{{ url_for('publications') }}" class="active">Publications</a></li>
+					<li><a href="{{ url_for('teaching') }}">Teaching</a></li>
+					<li><a href="{{ url_for('work_in_progress') }}">Work In Progress</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="publications">
+            <h2>Articles published in peer-reviewed journals</h2>
+
+            <ul class="publication-list">
+                <li>
+                    <h3><a href="https://doi.org/10.1093/icc/dtab009" target="_blank">Cimiterra, M., Krafft, J., and Nesta, L. (2021). Blockchain as Schumpeter Mark 1 or Mark 2? An empirical analysis of blockchain job offers in France and Germany.</a></h3>
+                    <p><em>Industrial and Corporate Change</em>, 30(6), 1388-1402.</p>
+                </li>
+            </ul>
+		<section class="publications">
+            <h2>Books chapters</h2>
+
+            <ul class="publication-list">
+                <li>
+                    <h3><a href="https://link.springer.com/chapter/10.1007/978-3-031-38260-4_9" target="_blank">Cimiterra, M., and Krafft, J., 2023. Blockchain: Antecedents and Future Challenges.</a></h3>
+                    <p><em>In Bergé, J.-S. (Ed.), The A Priori Method in the Social Sciences: A Multidisciplinary Approach</em>, (pp. 131-141). Springer International Publishing.</p>
+                </li>
+            </ul>
+			<ul class="publication-list">
+                <li>
+                    <h3><a href="https://www.e-elgar.com/shop/gbp/elgar-encyclopedia-on-the-economics-of-knowledge-and-innovation-9781839106989.html?srsltid=AfmBOoqAYaT9tsmayWAuycbDaZHIYf7WxoqUMofBCLf8mKDQ4V18RKZm" target="_blank">Cimiterra, M., and Krafft, J., 2022. Blockchain as a New Digital Paradigm.</a></h3>
+                    <p><em>In Elgar Encyclopedia on the Economics of Knowledge and Innovation</em>, (pp. 22-30). Edward Elgar Publishing.</p>
+                </li>
+            </ul>
+        </section> 
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Martin Cimiterra. All rights reserved.</p>
+    </footer>
+</body>
+</html>

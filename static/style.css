@@ -1,0 +1,88 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+header {
+    background-color: #005f73;
+    color: white;
+    padding: 10px 0;
+}
+
+header .container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    padding: 20px;
+    background-color: white;
+    margin-top: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Mise en page de la section About Me */
+.intro-container {
+    display: flex; /* Active Flexbox */
+    align-items: center; /* Centre verticalement */
+    justify-content: space-between; /* Espace entre texte et image */
+    gap: 0px; /* Espace entre texte et image */
+}
+
+.intro-text {
+    flex: 0.8; /* Le texte prend tout l'espace disponible */
+    text-align: justify; /* Justifie le texte */
+}
+
+.profile-photo {
+    width: 400px; /* Ajustez la taille */
+    height: auto;
+    border-radius: 50%;
+    border: 3px solid white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-right: 125px; /* Décale vers la gauche */
+}
+
+
+
+/* Adaptation mobile */
+@media (max-width: 768px) {
+    .intro-container {
+        flex-direction: column; /* Passe en colonne sur petit écran */
+        align-items: center; /* Centre les éléments */
+    }
+}

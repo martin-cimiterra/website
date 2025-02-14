@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Martin Cimiterra - {{ title }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Martin Cimiterra</h1>
+            <nav>
+                <ul>
+                    <li><a href="{{ url_for('home') }}">Home</a></li>
+                    <li><a href="{{ url_for('curriculum_vitæ') }}">Curriculum Vitæ</a></li>
+                    <li><a href="{{ url_for('publications') }}" class="active">Publications</a></li>
+					<li><a href="{{ url_for('teaching') }}">Teaching</a></li>
+					<li><a href="{{ url_for('work_in_progress') }}">Work In Progress</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="work_in_progress">
+            <h2>Work in progress</h2>
+
+            <ul class="publication-list">
+                <li>
+                    <p>Cimiterra, M., Montresor, S. Strategies, practices and enabling/hindering factors of the Twin Transition of Italian firms.</p>
+                </li>
+            </ul>
+			<ul class="publication-list">
+                <li>
+                    <p>Cimiterra, M., Gabriele, R., Lelli, F., Montresor, S., Stocchi, C., and Tokarchuk, O. Bridging Circular Economy Innovation/Practices and Digitalization: Insights from a Literature Review.</p>
+                </li>
+            </ul>
+			<ul class="publication-list">
+                <li>
+                    <p>Cimiterra, M., Martinelli, A. Decentralized Applications on Blockchain: Exploring Transaction Performance and the Role of Individual Capabilities, mimeo.</p>
+                </li>
+            </ul>
+		<section class="publications">
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Martin Cimiterra. All rights reserved.</p>
+    </footer>
+</body>
+</html>
