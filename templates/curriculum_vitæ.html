@@ -13,8 +13,8 @@
             <nav>
                 <ul>
                     <li><a href="{{ url_for('home') }}">Home</a></li>
-                    <li><a href="{{ url_for('curriculum_vitæ') }}">Curriculum Vitæ</a></li>
-                    <li><a href="{{ url_for('publications') }}" class="active">Publications</a></li>
+                    <li><a href="{{ url_for('curriculum_vitæ') }}" class="active">Curriculum Vitæ</a></li>
+					<li><a href="{{ url_for('publications') }}">Publications</a></li>
 					<li><a href="{{ url_for('teaching') }}">Teaching</a></li>
 					<li><a href="{{ url_for('work_in_progress') }}">Work In Progress</a></li>
                 </ul>
@@ -26,15 +26,15 @@
     <section class="curriculum_vitæ">
         <h2>Curriculum Vitæ</h2>
 
-        <iframe src="{{ url_for('static', filename='pdfs/CV_2025_English_version_Cimiterra.pdf') }}" width="100%" height="600px"></iframe>
+        <iframe src="{{ url_for('static', filename='pdfs/CV_2026.pdf') }}" width="100%" height="600px"></iframe>
 
-        <p>If the PDF does not load, <a href="{{ url_for('static', filename='pdfs/publication.pdf') }}" target="_blank">click here to view it</a>.</p>
+        <p>If the PDF does not load, <a href="{{ url_for('static', filename='pdfs/CV_2026.pdf') }}" target="_blank">click here to view it</a>.</p>
     </section>
 	</main>
 
 
     <footer>
-        <p>&copy; 2025 Martin Cimiterra. All rights reserved.</p>
+        <p>&copy; 2026 Martin Cimiterra. All rights reserved.</p>
     </footer>
 </body>
 </html>
