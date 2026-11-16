@@ -1,11 +1,13 @@
+
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Martin Cimiterra - {{ title }}</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
+
 <body>
     <header>
         <div class="container">
@@ -14,9 +16,9 @@
                 <ul>
                     <li><a href="{{ url_for('home') }}">Home</a></li>
                     <li><a href="{{ url_for('curriculum_vitæ') }}">Curriculum Vitæ</a></li>
-                    <li><a href="{{ url_for('publications') }}" class="active">Publications</a></li>
-					<li><a href="{{ url_for('teaching') }}">Teaching</a></li>
-					<li><a href="{{ url_for('work_in_progress') }}">Work In Progress</a></li>
+                    <li><a href="{{ url_for('publications') }}">Publications</a></li>
+                    <li><a href="{{ url_for('teaching') }}">Teaching</a></li>
+                    <li><a href="{{ url_for('work_in_progress') }}" class="active">Work In Progress</a></li>
                 </ul>
             </nav>
         </div>
@@ -24,24 +26,21 @@
 
     <main>
         <section class="work_in_progress">
-            <h2>Work in progress</h2>
+            <h2>Work in Progress</h2>
 
             <ul class="publication-list">
+
                 <li>
-                    <p>Cimiterra, M., Montresor, S. Strategies, practices and enabling/hindering factors of the Twin Transition of Italian firms.</p>
+                    <p>
+                        Cimiterra, M., Bertoletti, A., Lelli, F.,
+                        and Montresor, S.
+                        Universities as Drivers of Green-Digital
+                        Innovation: An Analysis of European Regions.
+                    </p>
                 </li>
+
             </ul>
-			<ul class="publication-list">
-                <li>
-                    <p>Cimiterra, M., Gabriele, R., Lelli, F., Montresor, S., Stocchi, C., and Tokarchuk, O. Bridging Circular Economy Innovation/Practices and Digitalization: Insights from a Literature Review.</p>
-                </li>
-            </ul>
-			<ul class="publication-list">
-                <li>
-                    <p>Cimiterra, M., Martinelli, A. Decentralized Applications on Blockchain: Exploring Transaction Performance and the Role of Individual Capabilities, mimeo.</p>
-                </li>
-            </ul>
-		<section class="publications">
+        </section>
     </main>
 
     <footer>
