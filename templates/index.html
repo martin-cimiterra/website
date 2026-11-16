@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,17 +7,28 @@
     <title>{{ title }}</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
+
 <body>
     <header>
         <div class="container">
             <h1>Martin Cimiterra</h1>
             <nav>
                 <ul>
-                    <li><a href="{{ url_for('home') }}">Home</a></li>
-                    <li><a href="{{ url_for('curriculum_vitæ') }}">Curriculum Vitæ</a></li>
-					<li><a href="{{ url_for('publications') }}">Publications</a></li>
-                    <li><a href="{{ url_for('teaching') }}">Teaching</a></li>
-					<li><a href="{{ url_for('work_in_progress') }}">Work In Progress</a></li>
+                    <li>
+                        <a href="{{ url_for('home') }}" class="active">Home</a>
+                    </li>
+                    <li>
+                        <a href="{{ url_for('curriculum_vitæ') }}">Curriculum Vitæ</a>
+                    </li>
+                    <li>
+                        <a href="{{ url_for('publications') }}">Publications</a>
+                    </li>
+                    <li>
+                        <a href="{{ url_for('teaching') }}">Teaching</a>
+                    </li>
+                    <li>
+                        <a href="{{ url_for('work_in_progress') }}">Work In Progress</a>
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -24,17 +36,55 @@
 
     <main>
         <section class="intro-container">
-    <div class="intro-text">
-        <h2>About Me</h2>
-        <p>Welcome to my academic site. This is a place where I share my research, publications, and teaching activities.</p>
-        <p>I am an Assistant Professor (Maître de conférences) in Economics at Université Paris-Saclay, affiliated with the Research Center in Economics and Management (RITM).</p>
-<p>I am interested in Industrial Dynamics, Industrial Organisation, Economics of Innovation, Digital Economy, Twin Transition and Sustainable Development Goals.</p>
-        <p>I work in Python, SQL, R and Stata.</p>
-    </div>
-	
-    <img src="{{ url_for('static', filename='images/Martin_Cimiterra.JPG') }}" alt="Martin Cimiterra" class="profile-photo">
-</section>
 
+            <div class="intro-text">
+                <h2>About Me</h2>
+
+                <p>
+                    Welcome to my academic website, where I share
+                    information about my research, publications,
+                    and teaching activities.
+                </p>
+
+                <p>
+                    I am an Assistant Professor of Economics
+                    (Maître de conférences) at Université Paris-Saclay,
+                    where I am affiliated with the Research Center
+                    in Economics and Management (RITM).
+                    I teach economics at the IUT de Sceaux.
+                </p>
+
+                <p>
+                    Before joining Université Paris-Saclay in 2025,
+                    I was a Postdoctoral Researcher at the University
+                    of Trento, Italy, where I worked on regional
+                    innovation and the green and digital transitions.
+                </p>
+
+                <p>
+                    My research interests lie at the intersection
+                    of economics of innovation, economic geography,
+                    industrial dynamics, and the digital economy.
+                    I am particularly interested in technological
+                    change, regional innovation, and the interactions
+                    between green and digital transitions.
+                </p>
+
+                <p>
+                    My research relies on applied econometrics,
+                    quantitative methods, and large-scale data
+                    analysis, using Python, R, Stata, and SQL.
+                </p>
+
+            </div>
+
+            <img
+                src="{{ url_for('static', filename='images/Martin_Cimiterra.JPG') }}"
+                alt="Martin Cimiterra"
+                class="profile-photo"
+            >
+
+        </section>
     </main>
 
     <footer>
